@@ -1,11 +1,12 @@
-import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import { Home, CreatePost } from "./pages";
+import { Nav } from "./components";
 
 const App = () => {
-  return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
-  );
+  return <Router>
+    <Nav />
+  </Router>;
 };
 
 export default App;
