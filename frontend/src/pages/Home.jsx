@@ -26,7 +26,7 @@ const Home = () => {
       setLoading(true);
 
       try {
-        const response = await fetch("https://dall-e-clone-8vy3.onrender.com", {
+        const response = await fetch("https://dall-e-clone-8vy3.onrender.com/api/v1/post", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
